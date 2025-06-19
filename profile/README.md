@@ -4,6 +4,35 @@
 
 dwani.ai is a self-hosted GenAI platform designed to provide voice AI interaction for Kannada and other Indian languages. 
 
+```bash
+pip install --upgrade dwani
+
+import dwani
+import os
+
+dwani.api_key = os.getenv("DWANI_API_KEY")
+
+dwani.api_base = os.getenv("DWANI_API_BASE_URL")
+```
+
+- gemma3 - with translation
+```python
+resp = dwani.Chat.create(prompt="Hello!", src_lang="english", tgt_lang="kannada", model="gemma3")
+print(resp)
+```
+```json
+{'response': 'ನಮಸ್ತೆ! ಭಾರತ ಮತ್ತು ಕರ್ನಾಟಕವನ್ನು ಗಮನದಲ್ಲಿಟ್ಟುಕೊಂಡು ಇಂದು ನಿಮ್ಮ ಪ್ರಶ್ನೆಗಳಿಗೆ ನಾನು ನಿಮಗೆ ಹೇಗೆ ಸಹಾಯ ಮಾಡಲಿ?'}
+```
+
+- gemma3 - without translation
+```python
+resp = dwani.Chat.direct(prompt="Hello!", model="gemma3")
+print(resp)
+```
+```json
+{'response': 'Hello! I am Dwani, ready to assist you with information pertaining to India, specifically Karnataka. '}
+```
+
 
 Website -> [dwani.ai](https://dwani.ai)
 
@@ -27,8 +56,10 @@ The project utilizes the following open-source tools:
 | Text to Speech : TTS                  | [TTS Indic Server](https://github.com/dwani-ai/tts-indic-server)  | 
 | Translation                           | [Indic Translate Server](https://github.com/dwani-ai/indic-translate-server) | 
 | Document Parser                       | [Indic Document Server](https://github.com/dwani-ai/docs-indic-server) |
-| dwani inference Server | [Dwani Server](https://github.com/dwani-ai/dwani-server) | 
+| dwani API Server | [Dwani Server](https://github.com/dwani-ai/dwani-api-server) | 
 | dwani Android | [Android](https://github.com/dwani-ai/dwani-android) |
+| dwani python sdk | [python-sdk](https://github.com/dwani-ai/dwani-python-sdk) |
+| vllm-arm64 | [vllm-arm64](https://github.com/dwani-ai/vllm-arm64) |
 
 
 
