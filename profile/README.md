@@ -1,8 +1,10 @@
-# dwani.ai - knowledge through voice
+# dwani.ai - Knowledge from Curiosity
 
 ## Overview
 
-dwani.ai is a self-hosted GenAI platform designed to provide voice AI interaction for Kannada and other Indian languages. 
+dwani.ai is a self-hosted, multimodal inference system designed for Indian Languages. 
+
+Interact using Text, Voice, Image and Documents for learning, analysis and exploration.
 
 ```bash
 pip install --upgrade dwani
@@ -24,25 +26,22 @@ print(resp)
 {'response': 'ನಮಸ್ತೆ! ಭಾರತ ಮತ್ತು ಕರ್ನಾಟಕವನ್ನು ಗಮನದಲ್ಲಿಟ್ಟುಕೊಂಡು ಇಂದು ನಿಮ್ಮ ಪ್ರಶ್ನೆಗಳಿಗೆ ನಾನು ನಿಮಗೆ ಹೇಗೆ ಸಹಾಯ ಮಾಡಲಿ?'}
 ```
 
-- gemma3 - without translation
-```python
-resp = dwani.Chat.direct(prompt="Hello!", model="gemma3")
-print(resp)
-```
-```json
-{'response': 'Hello! I am Dwani, ready to assist you with information pertaining to India, specifically Karnataka. '}
-```
-
 
 Website -> [dwani.ai](https://dwani.ai)
+
+Chat UI -> [chat.dwani.ai](https://chat.dwani.ai)
+
+Workshop PPT -> [workshop-ppt](https://tinyurl.com/dwani-ai-workshop)
+
+Why dwani ? - [![Video](https://img.youtube.com/vi/4DnyKMTQf2w/hqdefault.jpg)](https://youtu.be/4DnyKMTQf2w)
+
 
 [Download App on Google Play](
 https://play.google.com/store/apps/details?id=com.slabstech.dhwani.voiceai&pcampaignid=web_share)
 
 ## Research Goals
-
 - Measure and improve the Time to First Token Generation (TTFTG) for model architectures in ASR, Translation, and TTS systems.
-- Develop and enhance a Kannada voice model that meets industry standards set by OpenAI, Google, ElevenLabs, xAI
+- Develop and enhance a Kannada voice + OCR model that meets industry standards set by OpenAI, Google, ElevenLabs, xAI
 - Create robust voice solutions for Indian languages, with a specific emphasis on Kannada.
 
 
@@ -62,12 +61,11 @@ The project utilizes the following open-source tools:
 | vllm-arm64 | [vllm-arm64](https://github.com/dwani-ai/vllm-arm64) |
 
 
-
 ## Features
 
 | Feature                      | Description                                                                 |  Components          | 
 |------------------------------|-----------------------------------------------------------------------------|-----------|
-| Kannada Voice AI                | Provides answers to voice queries using a LLM                     | LLM                 | 
+| Voice AI                | Provides answers to voice queries using a LLM                     | ASR + LLM                 | 
 | Text Translate               | Translates text from one language to another.                                |  Translation         |
 | Text Query                   | Allows querying text data for specific information.                          | LLM                 | 
 | Voice to Text Translation    | Converts spoken language to text and translates it.                          |  ASR, Translation    |
