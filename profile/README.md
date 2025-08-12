@@ -1,6 +1,13 @@
 # dwani.ai - Knowledge from Curiosity
 
+Discovery - Document Analytics 
+
+[Download App on Google Play](
+https://play.google.com/store/apps/details?id=com.slabstech.dhwani.voiceai&pcampaignid=web_share)
+
+<!-- 
 ## Overview
+
 
 dwani.ai is a self-hosted, multimodal inference system designed for Indian Languages. 
 
@@ -73,6 +80,7 @@ The project utilizes the following open-source tools:
 | Text to Speech           | Generates speech from text.                                                  |  TTS                 |
 | Voice to Voice Translation   | Converts spoken language to text, translates it, and then generates speech.   |  ASR, Translation, TTS|
 | Answer Engine with Translate| Provides answers to queries with translation capabilities.                   |  ASR, LLM, Translation, TTS| 
+-->
 
 ## Contact
 - For any questions or issues, please open an issue on GitHub or contact us via email.
@@ -81,4 +89,5 @@ The project utilizes the following open-source tools:
 - For business queries, Email : sachin (at) dwani (dot) ai
 
 
+Why dwani ? - [![Video](https://img.youtube.com/vi/4DnyKMTQf2w/hqdefault.jpg)](https://youtu.be/4DnyKMTQf2w)
 
